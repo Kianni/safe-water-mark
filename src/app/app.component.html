@@ -1,1 +1,6 @@
-<button class="btn btn-primary">Test</button>
+<div class="container">
+  <button class="btn btn-primary" (click)="lightsOn = !lightsOn">
+    Toggle Day & Night
+  </button>
+  <app-nord-light [dayOrNight]="lightsOn"></app-nord-light>
+</div>
